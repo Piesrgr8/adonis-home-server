@@ -31,3 +31,7 @@ Route.get('login', 'AuthController.loginShow').as('auth.login.show')
 Route.post('login', 'AuthController.login').as('auth.login')
 
 Route.get('logout', 'AuthController.logout').as('auth.logout')
+
+
+Route.post('activation-key/generate', 'ActivationKeysController.register')
+Route.post('activation-key/deactivate', 'ActivationKeysController.deactivate')
